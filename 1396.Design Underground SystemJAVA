@@ -2,10 +2,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 class UndergroundSystem {
-    // Maps customer ID -> CheckIn details (station, time)
     private Map<Integer, CheckInInfo> checkIns;
     
-    // Maps route key ("startStation->endStation") -> Route summary (total time, count)
+
     private Map<String, RouteInfo> routes;
 
     private static class CheckInInfo {
